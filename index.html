@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gem · 8-Bits</title>
-<meta name="description" content="Gem, creadores de 8-Bits: 32 juegos arcade de estilo 8 bits para Android e iOS.">
+<meta name="description" content="Gem, creadores de 8-Bits: 40 juegos arcade de estilo 8 bits para Android e iOS, con 8 deportes para 2 jugadores.">
 <link rel="icon" href="icono.png">
 <style>
   :root { --night: #05041a; --panel: #120c33; --line: #34287a; --text: #f4efff; --dim: #a99fd6; --pink: #ff3df0; --cyan: #29e6ff; --gold: #ffd23d; }
@@ -23,6 +23,13 @@
   .links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 8px; }
   .links a { display: inline-block; padding: 10px 16px; border: 2px solid var(--line); border-radius: 10px; text-decoration: none; background: var(--panel); }
   .links a:hover { border-color: var(--cyan); }
+  .card.new { border-color: var(--pink); box-shadow: 0 0 24px #ff3df033; }
+  .tag { display: inline-block; font-size: 12px; padding: 2px 6px; margin-right: 6px; border-radius: 6px; background: var(--pink); color: var(--night); vertical-align: middle; }
+  .lead { margin: 0 0 12px; color: var(--dim); }
+  .sports { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; }
+  .sport { background: #0b0a24; border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+  .sport b { display: block; color: var(--cyan); margin-bottom: 2px; }
+  .sport span { font-size: 15px; color: var(--text); }
   footer { text-align: center; color: var(--dim); font-size: 14px; margin-top: 32px; }
 </style>
 </head>
@@ -32,18 +39,33 @@
     <img src="icono.png" alt="Icono de 8-Bits">
     <h1>8-BITS</h1>
     <p class="by">Un juego de <b>Gem</b></p>
-    <p>32 juegos arcade de estilo 8 bits en una sola app: clásicos, aventuras y modo para dos jugadores. Próximamente en
-      Google Play y App Store.</p>
+    <p>40 juegos arcade de estilo 8 bits en una sola app: clásicos, aventuras, deportes y modo para dos jugadores.
+      Próximamente en Google Play y App Store.</p>
   </section>
 
   <section class="card">
     <h2>Qué incluye</h2>
     <ul>
-      <li>32 juegos retro: arcade, puzles, deportes y aventuras.</li>
+      <li>40 juegos retro: arcade, acción, puzles, aventuras y deportes.</li>
       <li>Modo de dos jugadores en el mismo PC o con dos celulares en una sala.</li>
-      <li>Apariencias y compañeros para tus personajes.</li>
+      <li>Apariencias y compañeros para tus héroes, y más de 160 skins para 24 juegos.</li>
       <li>Sin registro, y puedes jugar sin internet (el modo con dos celulares sí lo necesita).</li>
     </ul>
+  </section>
+
+  <section class="card new">
+    <h2><span class="tag">NUEVO</span> 8 deportes para retar a un amigo</h2>
+    <p class="lead">Cada uno con su propia mecánica. Juega contra la máquina o contra otra persona.</p>
+    <div class="sports">
+      <div class="sport"><b>Básquet</b><span>Carga el tiro y suéltalo en la zona verde. Roba, tapa y mete triples.</span></div>
+      <div class="sport"><b>Vóley Playa</b><span>Salta y remata al atardecer. Máximo 3 toques por lado.</span></div>
+      <div class="sport"><b>Hockey de Aire</b><span>El disco hereda la fuerza de tu golpe y rebota en las bandas.</span></div>
+      <div class="sport"><b>Boxeo</b><span>Guardia, gancho y contragolpe en 3 asaltos.</span></div>
+      <div class="sport"><b>Béisbol</b><span>Lanza curvas y rápidas, o batea en el momento justo.</span></div>
+      <div class="sport"><b>Sumo</b><span>Carga la embestida y saca a tu rival del círculo.</span></div>
+      <div class="sport"><b>Minigolf</b><span>6 hoyos con molino, agua, arena y rampas.</span></div>
+      <div class="sport"><b>Vallas</b><span>Alterna ← → para correr y salta las 10 vallas.</span></div>
+    </div>
   </section>
 
   <section class="card">
